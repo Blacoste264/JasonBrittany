@@ -1,20 +1,28 @@
 (function() {
-    'use strict';
+  'use strict';
 
-    angular
-        .module('app')
-        .controller('NfcController', NfcController);
+  angular
+    .module('app')
+    .controller('NfcController', NfcController);
 
-    NfcController.$inject = ['NfcFactory'];
+  NfcController.$inject = ['swFactory'];
 
-    /* @ngInject */
-    function NfcController(NfcFactory) {
-        var vm = this;
+  /* @ngInject */
+  function NfcController(swFactory) {
+    var vm = this;
+    vm.findSWFighters = findSWFighters;
+
+/*search random function*/
 
 
+    function findSWFighters() {
+      swFactory
+        .swSearch()
+        .then(function(data) {
+          vm.results = data;
+          vm.randomFighter = vm.results.results[Math.floor(Math.random() * vm.results.results.length)];
 
-        function activate() {
-
-        }
+        });
     }
+  }
 })();

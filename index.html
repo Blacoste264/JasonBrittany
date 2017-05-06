@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <!-- inject:css -->
+  <link rel="stylesheet" href="/app/styles/animate.css">
   <link rel="stylesheet" href="/app/styles/styles.css">
   <!-- endinject -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -30,7 +31,7 @@
   <div class="container">
     <div class="row">
       <div class="col-md-12">
-        <button type="button" class="btn btn-primary btn-lg">Large button</button>
+        <button type="button" class="btn btn-primary btn-lg" ng-click="vm.findSWFighters()">Large button</button>
       </div>
     </div>
   </div>
@@ -41,16 +42,22 @@
       </div>
       <div class="row">
         <div class="col-md-6">
-          <div class="well">...</div>
+          <div class="well"> </div>
+          <pre>{{vm.randomFighter}}</pre>
         </div>
       </div>
     </div>
   </div>
   <!-- bower:js -->
   <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/jquery/dist/jquery.js"></script>
+  <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
   <!-- endbower -->
   <!-- inject:js -->
   <script src="/app/app.nerd.js"></script>
+  <script src="/app/nfc.controller.js"></script>
+  <script src="/app/nfc.factory.marvel.js"></script>
+  <script src="/app/nfc.factory.sw.js"></script>
   <!-- endinject -->
 </body>
 

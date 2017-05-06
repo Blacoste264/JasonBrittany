@@ -15,7 +15,7 @@
 
         return service;
 
-        function swSearch(term) {
+        function swSearch() {
             return $http.get('http://swapi.co/api/people')
               .then(function(response) {
                 return response.data;
