@@ -13,7 +13,10 @@
     vm.findSWFighters = findSWFighters;
 
 /*search random function*/
+$( "button" ).on( "click", function() {
+$("/imgs/yoda.gif").popUp();
 
+});
 
     function findSWFighters() {
       swFactory
@@ -21,6 +24,7 @@
         .then(function(data) {
           vm.results = data;
           vm.randomFighter = vm.results.results[Math.floor(Math.random() * vm.results.results.length)];
+
 
         });
     }

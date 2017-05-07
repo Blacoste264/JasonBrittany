@@ -17,33 +17,39 @@
 <body ng-controller="NfcController as vm">
   <div class="jumbotron jumbotron-fluid">
     <div class="container">
-      <h1 class="display-3">Headline of awesome</h1>
-      <p class="lead">This is the second part of the headline that will talk about stuff.</p>
+      <div class="button"><h1>Nerd Fight Club</h1></div>
+<link async href="http://fonts.googleapis.com/css?family=Warnes" data-generated="http://enjoycss.com" rel="stylesheet" type="text/css"/>
+      <img src="imgs/war.gif"/>
     </div>
   </div>
   <div class="container">
     <div class="row">
       <div class="col-md-12">
-  <h2>Pick fighters and stuff will happen involving fighting and whatnot.</h2>
+        <div class="button"><h2>Hit the button to randomly choose your fighter!</h2></div>
+<link async href="http://fonts.googleapis.com/css?family=Warnes" data-generated="http://enjoycss.com" rel="stylesheet" type="text/css"/>
+
   </div>
   </div>
 </div>
   <div class="container">
     <div class="row">
-      <div class="col-md-12">
-        <button type="button" class="btn btn-primary btn-lg" ng-click="vm.findSWFighters()">Large button</button>
+      <div class="col-md-4"></div>
+      <div class="col-md-4">
+        <button id="chooseFighterButton" class="glow" type="button" ng-click="vm.findSWFighters()">Go!</button>
       </div>
+      <div class="col-md-4"></div>
     </div>
   </div>
   <div class="container">
-    <div class="row">
-      <div class="col-md-6">
-        <div class="well">
-          <pre><img ng-src="/imgs/{{vm.randomFighter.name}}.jpg" width="300px" height="300px"/></pre>
+    <div id="rowSpace" class="row">
+      <div class="col-md-6"><!-- Left Column -->
+        <div class="glow" class="well">
+          <p><button><img class="img-responsive" ng-src="/imgs/{{vm.randomFighter.name}}.jpg" id="fighterPicture"/></button></p>
+
         </div>
       </div>
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-6"> <!-- Right column -->
           <div class="well"> </div>
 
         </div>

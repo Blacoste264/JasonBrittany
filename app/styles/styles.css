@@ -1,0 +1,67 @@
+.jumbotron {
+  background-image:url(/imgs/whitestars.jpg);
+  background-size: contain;
+}
+
+html {
+  background-color:black;
+}
+
+.button {
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 10px;
+  border: none;
+  font: normal 48px/normal "Warnes", Helvetica, sans-serif;
+  color: rgba(255,255,255,1);
+  text-decoration: normal;
+  text-align: center;
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  white-space: pre;
+  text-shadow: 0 0 9px rgba(0,0,0,1) , 0 0 10px rgba(255,255,255,1) , 0 0 20px rgba(255,255,255,1) , 0 0 30px rgba(255,255,255,0.7) , 0 0 40px rgba(0,0,255,1) , 0 0 70px rgba(0,0,255,1) , 0 0 80px rgba(0,255,255,1) , 0 0 100px rgba(255,255,255,1) ;
+  -webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+.glow {
+    -webkit-box-shadow: 0 0 9px 4px rgba(0,0,255,0.7) , 3px 3px 18px 3px rgba(0,255,255,1) ;
+    box-shadow: 0 0 9px 4px rgba(0,0,255,0.7) , 3px 3px 18px 3px rgba(0,255,255,1) ;
+    -webkit-transition: box-shadow 700ms cubic-bezier(0.25, 0.1, 0.25, 1) 10ms;
+    -moz-transition: box-shadow 700ms cubic-bezier(0.25, 0.1, 0.25, 1) 10ms;
+    -o-transition: box-shadow 700ms cubic-bezier(0.25, 0.1, 0.25, 1) 10ms;
+    transition: box-shadow 700ms cubic-bezier(0.25, 0.1, 0.25, 1) 10ms;
+}
+body.ng-scope {
+  background-color:black;
+}
+#chooseFighterButton {
+  padding: 50px 50px;
+  border-radius:100%;
+  background-image:url(/imgs/whitepearl.jpg);
+  background-size: 200px;
+  background-position: center;
+  color: black;
+  font-size:2em;
+}
+div.row {
+  text-align:center;
+}
+div.col-md-4 {
+  text-align: center;
+  margin-top:50px;
+}
+p {
+  background-color: white;
+}
+#fighterPicture {
+  height:400px;
+  width:450px;
+}
+#rowSpace {
+  margin-top: 50px;
+}

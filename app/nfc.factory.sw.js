@@ -19,8 +19,9 @@
             return $http.get('http://swapi.co/api/people')
               .then(function(response) {
                 return response.data;
+                });
 
-              });
+
         }
     }
 })();
