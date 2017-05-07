@@ -7,16 +7,32 @@
 
   NfcController.$inject = ['swFactory'];
 
-  /* @ngInject */
+/* When button is clicked, have Yoda Modal appear function */
+  $(function() {
+    $('#submitButton').on('show.bs.modal', function() {
+      var submitButton = $(this);
+      clearTimeout(submitButton.data('hideInterval'));
+      submitButton.data('hideInterval', setTimeout(function() {
+        submitButton.modal('hide');
+      }, 3000));
+    });
+  });
+  /* Hide divs containg fighters when page loads */
+  $(document).ready(function() {
+    $('#showHide').hide();
+  });
+  /* Show fighter when button is clicked */
+  $("#chooseFighterButton").click(function() {
+    $("#showHide").show("slow");
+  });
+
+    $('#nfcHeading.hidden').fadeIn(1000).removeClass('hidden');
+
+
+  /* Select random fighter function */
   function NfcController(swFactory) {
     var vm = this;
     vm.findSWFighters = findSWFighters;
-
-/*search random function*/
-$( "button" ).on( "click", function() {
-$("/imgs/yoda.gif").popUp();
-
-});
 
     function findSWFighters() {
       swFactory
