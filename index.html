@@ -8,13 +8,12 @@
   <link async href="http://fonts.googleapis.com/css?family=Warnes" data-generated="http://enjoycss.com" rel="stylesheet" type="text/css"/>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
-  <link rel="stylesheet" type="text/css" media="all" href="/app/styles/animate.css">
   <!-- title -->
   <title>Nerd Fight Club</title>
-
 </head>
 
 <body ng-controller="NfcController as vm">
+  
   <!-- Jumbotron and heading -->
   <div class="jumbotron jumbotron-fluid">
     <div class="container">
@@ -25,19 +24,21 @@
       </div>
     </div>
   </div>
-  <!-- instructions -->
+
+  <!-- Hide divs and Instructions -->
   <div class="container">
     <div class="row">
       <div class="col-md-12">
         <div class="hidden"> <!-- Div for hiding at beginning -->
+          <!-- Instructions -->
           <div id="instructions" class="neonGlow"><h2>Hit the button to randomly choose fighters.</h2></div>
           <div class="neonGlow" id="secondInstructions"><h2> Who would win a battle? </h2></div>
           <div class="neonGlow" id="thirdInstructions"><h2> Winner!! </h2></div>
-
         </div>
       </div>
     </div>
 
+  <!-- Submit Button -->
   <div class="container">
     <div class="row">
       <div class="col-md-4"></div>
@@ -76,9 +77,6 @@
     </div>
   </div>
 </div>
-
-
-
 
   <!-- bower:js -->
   <script src="bower_components/angular/angular.js"></script>

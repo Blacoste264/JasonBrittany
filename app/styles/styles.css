@@ -1,3 +1,5 @@
+/*----------HTML Elements Styling----------*/
+
 .jumbotron {
   background-image: url(/imgs/whitestars.jpg);
   background-size: contain;
@@ -8,7 +10,24 @@ html {
   background-color: black;
 }
 
-/* Box Glows only */
+body.ng-scope {
+  background-color: black;
+  text-align: center;
+}
+
+div.well {
+  background-color: black;
+  border: none;
+}
+
+button:focus {
+  outline:0;
+}
+h2 {
+  text-align:center;
+}
+
+/*------------- Box Glows--------------- */
 
 .neonGlow {
   display: inline-block;
@@ -24,14 +43,21 @@ html {
   -o-text-overflow: clip;
   text-overflow: clip;
   white-space: pre;
-  text-shadow: 0 0 9px rgba(0, 0, 0, 1), 0 0 10px rgba(255, 255, 255, 1), 0 0 20px rgba(255, 255, 255, 1), 0 0 30px rgba(255, 255, 255, 0.7), 0 0 40px rgba(0, 0, 255, 1), 0 0 70px rgba(0, 0, 255, 1), 0 0 80px rgba(0, 255, 255, 1), 0 0 100px rgba(255, 255, 255, 1);
+  text-shadow: 0 0 9px rgba(0, 0, 0, 1),
+  0 0 10px rgba(255, 255, 255, 1),
+  0 0 20px rgba(255, 255, 255, 1),
+  0 0 30px rgba(255, 255, 255, 0.7),
+  0 0 40px rgba(0, 0, 255, 1),
+  0 0 70px rgba(0, 0, 255, 1),
+  0 0 80px rgba(0, 255, 255, 1),
+  0 0 100px rgba(255, 255, 255, 1);
   -webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
   -moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
   -o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
   transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
 }
 
-/* Text glows only */
+/*------------- Text glows--------------*/
 
 .glow {
   border-radius: 10%;
@@ -43,12 +69,7 @@ html {
   transition: box-shadow 700ms cubic-bezier(0.25, 0.1, 0.25, 1) 10ms;
 }
 
-body.ng-scope {
-  background-color: black;
-  text-align: center;
-}
-
-/* Button to randomly select fighter */
+/*-------- Button to randomly select fighter---------- */
 
 #chooseFighterButton {
   padding: 50px 50px;
@@ -62,13 +83,13 @@ body.ng-scope {
   margin-top:100px;
 }
 
-/* Adds space to top of instructions */
+/*---------Adds space to top of instructions--------- */
 
 .rowSpace {
   margin-top: 50px;
 }
 
-/* Background of container for fighter pics */
+/*------ Background of container for fighter pics------- */
 
 #buttonFighterLeft {
   border-radius: 10%;
@@ -76,7 +97,7 @@ body.ng-scope {
   width: 360px;
 }
 
-/* Actual images of fighters */
+/*--------- Actual images of fighters------- */
 
 #fighterPicture {
   height: 400px;
@@ -84,7 +105,7 @@ body.ng-scope {
   border-radius: 10%;
 }
 
-/* Styling for Yoda modal */
+/*-------- Styling for Yoda modal------ */
 
 div.modal-content {
   background-color: black;
@@ -110,39 +131,33 @@ div.modal-content {
 #yoda {
   border-radius: 100%;
 }
+
 #yodaText {
   color: darkgrey;
   text-shadow: 0px 2px 4px green;
   width: 800px;
 }
+/*--------- Instructions --------------*/
 #secondInstructions {
   display:none;
 }
-div.well {
-  background-color: black;
-  border: none;
-}
-#leftPictureButton {
-  border-radius: 10%;
-}
-button:focus {
-  outline:0;
-}
-h2 {
-  text-align:center;
-}
+
 #thirdInstructions {
   display: none;
 }
+
 #playAgainButton {
   display: none;
 }
+
 #vaderGif {
   float: right;
 }
+
 #nfcHeading {
   float: left;
 }
+
 #featuringHeading {
   text-align: left;
 }
