@@ -95,6 +95,7 @@ p {
 
 div.modal-content {
   background-color: black;
+  text-align: center;
 }
 
 .modal-backdrop {
@@ -115,4 +116,12 @@ div.modal-content {
 
 #yoda {
   border-radius: 100%;
+}
+#yodaText {
+  color: darkgrey;
+  text-shadow: 0px 2px 4px green;
+  width: 800px;
+}
+#secondInstructions {
+  display:none;
 }

@@ -23,8 +23,17 @@
   });
   /* Show fighter when button is clicked */
   $("#chooseFighterButton").click(function() {
-    $("#showHide").show("slow");
-  });
+    $("#showHide").fadeIn(8000);
+});
+$("#chooseFighterButton").click(function() {
+  $("#chooseFighterButton").fadeOut(1000);
+});
+$("#chooseFighterButton").click(function() {
+  $("#instructions").fadeOut(1000);
+});
+$("#chooseFighterButton").click(function() {
+  $("#secondInstructions").slideDown(5000);
+});
 /* Hide NFC and gif at beginning then fade in */
     $('div.hidden').fadeIn(5000).removeClass('hidden');
 
