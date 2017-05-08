@@ -17,25 +17,45 @@
       }, 3000));
     });
   });
+
+  //---------------------Jquery effects----------------
   /* Hide divs containg fighters when page loads */
-  $(document).ready(function() {
-    $('#showHide').hide();
-  });
-  /* Show fighter when button is clicked */
-  $("#chooseFighterButton").click(function() {
-    $("#showHide").fadeIn(8000);
+$(document).ready(function() {
+  $('#showHide').hide();
 });
+/* Show fighter when button is clicked */
+$("#chooseFighterButton").click(function() {
+  $("#showHide").fadeIn(8000);
+});
+/* Gets rid of button display */
 $("#chooseFighterButton").click(function() {
   $("#chooseFighterButton").fadeOut(1000);
 });
+/* Gets rid of first instructions */
 $("#chooseFighterButton").click(function() {
   $("#instructions").fadeOut(1000);
 });
+/* Displays new instructions */
 $("#chooseFighterButton").click(function() {
-  $("#secondInstructions").slideDown(5000);
+  $("#secondInstructions").fadeIn(1000);
 });
-/* Hide NFC and gif at beginning then fade in */
-    $('div.hidden').fadeIn(5000).removeClass('hidden');
+// if left button is clicked, right will fade
+$("#leftPictureButton").click(function() {
+  $("#rightRow").fadeOut(1000);
+});
+// if right button is clicked, left will fade
+$("#rightPictureButton").click(function() {
+  $("#leftRow").fadeOut(1000);
+});
+$("#leftPictureButton").click(function() {
+  $("#secondInstructions").fadeOut(.1);
+});
+$("#leftPictureButton").click(function() {
+  $("#thirdInstructions").fadeIn(1000);
+});
+/* Hide NFC andgif at beginning then fade in */
+$('div.hidden').fadeIn(5000).removeClass('hidden');
+//-------------End of Jquery Effects-----------
 
   /* Select random fighter function */
   function NfcController(swFactory) {

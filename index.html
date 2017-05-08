@@ -31,6 +31,8 @@
         <div class="hidden"> <!-- Div for hiding at beginning -->
           <div id="instructions" class="neonGlow"><h2>Hit the button to randomly choose your fighter!</h2></div>
           <div class="neonGlow" id="secondInstructions"><h2> Choose who would win a battle! </h2></div>
+          <div class="neonGlow" id="thirdInstructions"><h2> Winner!! </h2></div>
+
         </div>
       </div>
     </div>
@@ -47,16 +49,16 @@
 
   <!-- Fighters -->
   <div id="showHide" class="container">
-    <div id="rowSpace" class="row">
+    <div id="rowSpace" id="leftRow" class="row">
       <div class="col-md-6"><!-- Left Column -->
-        <div class="glow" class="well">
-          <p><img ng-src="/imgs/{{vm.randomFighter.name}}.jpg" id="fighterPicture"/></p>
+        <div class="well">
+          <button id="leftPictureButton" class="glow"><img ng-src="/imgs/{{vm.randomFighter.name}}.jpg" id="fighterPicture" class="glow"/></button>
         </div>
       </div>
-      <div class="row">
+      <div id="rightRow" class="row">
         <div class="col-md-6"> <!-- Right column -->
-          <div class="glow" class="well">
-            <p><img ng-src="/imgs/{{vm.randomFighter.name}}.jpg" id="fighterPicture"/></p>
+          <div class="well">
+            <button id="rightPictureButton" class="glow"><img ng-src="/imgs/{{vm.randomFighter.name}}.jpg" class="glow" id="fighterPicture"/></button>
           </div>
         </div>
       </div>

@@ -1,6 +1,7 @@
 .jumbotron {
   background-image: url(/imgs/whitestars.jpg);
   background-size: contain;
+  text-align: center;
 }
 
 html {
@@ -44,6 +45,7 @@ html {
 
 body.ng-scope {
   background-color: black;
+  text-align: center;
 }
 
 /* Button to randomly select fighter */
@@ -59,17 +61,6 @@ body.ng-scope {
   font-size: 2em;
 }
 
-/* Styling to align columns & rows */
-
-div.row {
-  text-align: center;
-}
-
-div.col-md-4 {
-  text-align: center;
-  margin-top: 50px;
-}
-
 /* Adds space to top of instructions */
 
 #rowSpace {
@@ -78,9 +69,10 @@ div.col-md-4 {
 
 /* Background of container for fighter pics */
 
-p {
-  background-color: white;
+#buttonFighterLeft {
   border-radius: 10%;
+  height: 300px;
+  width: 360px;
 }
 
 /* Actual images of fighters */
@@ -110,8 +102,8 @@ div.modal-content {
 
 .fade {
   opacity: 0;
-  -webkit-transition: opacity 2s linear;
-  transition: opacity 4s linear;
+  -webkit-transition: opacity 4s linear;
+  transition: opacity 8s linear;
 }
 
 #yoda {
@@ -124,4 +116,23 @@ div.modal-content {
 }
 #secondInstructions {
   display:none;
+}
+div.well {
+  background-color: black;
+  border: none;
+}
+#leftPictureButton {
+  border-radius: 10%;
+}
+button:focus {
+  outline:0;
+}
+h2 {
+  text-align:center;
+}
+#thirdInstructions {
+  display: none;
+}
+#playAgainButton {
+  display: none;
 }
