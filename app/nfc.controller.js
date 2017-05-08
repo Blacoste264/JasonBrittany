@@ -25,9 +25,8 @@
   $("#chooseFighterButton").click(function() {
     $("#showHide").show("slow");
   });
-
-    $('#nfcHeading.hidden').fadeIn(1000).removeClass('hidden');
-
+/* Hide NFC and gif at beginning then fade in */
+    $('div.hidden').fadeIn(5000).removeClass('hidden');
 
   /* Select random fighter function */
   function NfcController(swFactory) {
@@ -40,9 +39,7 @@
         .then(function(data) {
           vm.results = data;
           vm.randomFighter = vm.results.results[Math.floor(Math.random() * vm.results.results.length)];
-
-
         });
+      }
     }
-  }
 })();
