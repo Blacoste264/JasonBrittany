@@ -14,7 +14,7 @@
       clearTimeout(submitButton.data('hideInterval'));
       submitButton.data('hideInterval', setTimeout(function() {
         submitButton.modal('hide');
-      }, 3000));
+      }, 1000));
     });
   });
 
@@ -53,6 +53,12 @@ $("#leftPictureButton").click(function() {
 $("#leftPictureButton").click(function() {
   $("#thirdInstructions").fadeIn(1000);
 });
+$("#rightPictureButton").click(function() {
+  $("#secondInstructions").fadeOut(.1);
+});
+$("#rightPictureButton").click(function() {
+  $("#thirdInstructions").fadeIn(1000);
+});
 /* Hide NFC andgif at beginning then fade in */
 $('div.hidden').fadeIn(5000).removeClass('hidden');
 //-------------End of Jquery Effects-----------
@@ -67,7 +73,8 @@ $('div.hidden').fadeIn(5000).removeClass('hidden');
         .swSearch()
         .then(function(data) {
           vm.results = data;
-          vm.randomFighter = vm.results.results[Math.floor(Math.random() * vm.results.results.length)];
+          vm.randomFighter1 = vm.results[Math.floor(Math.random() * vm.results.length)];
+          vm.randomFighter2 = vm.results[Math.floor(Math.random() * vm.results.length)];
         });
       }
     }

@@ -59,11 +59,12 @@ body.ng-scope {
   background-position: center;
   color: black;
   font-size: 2em;
+  margin-top:100px;
 }
 
 /* Adds space to top of instructions */
 
-#rowSpace {
+.rowSpace {
   margin-top: 50px;
 }
 
@@ -135,4 +136,13 @@ h2 {
 }
 #playAgainButton {
   display: none;
+}
+#vaderGif {
+  float: right;
+}
+#nfcHeading {
+  float: left;
+}
+#featuringHeading {
+  text-align: left;
 }

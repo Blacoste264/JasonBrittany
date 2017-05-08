@@ -20,7 +20,8 @@
     <div class="container">
       <div class="hidden"> <!-- Div for hiding h1 text (NFC) and gif at beginning -->
       <div id="nfcHeading" class="neonGlow"><h1>Nerd Fight Club</h1></div>
-      <img src="imgs/war.gif"/><!-- Gif fighting vader -->
+      <img id="vaderGif" src="imgs/war.gif"/><!-- Gif fighting vader -->
+      <div id="featuringHeading"><p class="neonGlow"> Today featuring Star Wars. </p></div>
       </div>
     </div>
   </div>
@@ -29,8 +30,8 @@
     <div class="row">
       <div class="col-md-12">
         <div class="hidden"> <!-- Div for hiding at beginning -->
-          <div id="instructions" class="neonGlow"><h2>Hit the button to randomly choose your fighter!</h2></div>
-          <div class="neonGlow" id="secondInstructions"><h2> Choose who would win a battle! </h2></div>
+          <div id="instructions" class="neonGlow"><h2>Hit the button to randomly choose fighters.</h2></div>
+          <div class="neonGlow" id="secondInstructions"><h2> Who would win a battle? </h2></div>
           <div class="neonGlow" id="thirdInstructions"><h2> Winner!! </h2></div>
 
         </div>
@@ -49,16 +50,16 @@
 
   <!-- Fighters -->
   <div id="showHide" class="container">
-    <div id="rowSpace" id="leftRow" class="row">
+    <div id="rowSpace" class="row">
       <div class="col-md-6"><!-- Left Column -->
-        <div class="well">
-          <button id="leftPictureButton" class="glow"><img ng-src="/imgs/{{vm.randomFighter.name}}.jpg" id="fighterPicture" class="glow"/></button>
+        <div id="leftRow" class="well">
+          <button id="leftPictureButton" class="glow"><img ng-src="/imgs/{{vm.randomFighter1.name}}.jpg" id="fighterPicture" class="glow"/></button>
         </div>
       </div>
       <div id="rightRow" class="row">
         <div class="col-md-6"> <!-- Right column -->
           <div class="well">
-            <button id="rightPictureButton" class="glow"><img ng-src="/imgs/{{vm.randomFighter.name}}.jpg" class="glow" id="fighterPicture"/></button>
+            <button id="rightPictureButton" class="glow"><img ng-src="/imgs/{{vm.randomFighter2.name}}.jpg" class="glow" id="fighterPicture"/></button>
           </div>
         </div>
       </div>
@@ -70,7 +71,7 @@
 <div class="modal fade" id="submitButton" tabindex="-1">
   <div class="modal-dialog">
     <div class="modal-content">
-      <img src="/imgs/yoda.gif" id="yoda"/>
+      <img src="/imgs/yoda1.gif" id="yoda"/>
       <h2 id="yodaText">"Choosing fighters, Yoda is..." </h2>
     </div>
   </div>
